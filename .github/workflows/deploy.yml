@@ -1,0 +1,50 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7.x
+
+      - uses: actions/cache@v2
+        id: bundle-cache
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Bundle config
+        run: |
+          bundle config path vendor/bundle
+      - name: Bundle Install
+        if: steps.bundle-cache.outputs.cache-hit != 'true'
+        run: |
+          bundle install
+      - name: Bundle Install locally
+        if: steps.bundle-cache.outputs.cache-hit == 'true'
+        run: |
+          bundle install --local
+      - name: Build Site
+        run: |
+          bash tools/build.sh -d build
+      - name: Push
+        run: |
+          cd build
+          touch .nojekyll
+          remote_branch=gh-pages
+          remote_repo="https://${{ secrets.JEKYLL_PAT }}@github.com/$GITHUB_REPOSITORY.git"
+          git init
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git add .
+          git commit -m "jekyll build from Action $GITHUB_SHA"
+          git push --force $remote_repo master:$remote_branch

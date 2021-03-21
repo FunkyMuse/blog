@@ -1,18 +1,18 @@
 # hidden files
-.jekyll-cache
-.nojekyll
+.*
+
 !.github
+
+# python compiled files
+*.pyc
+
+# jekyll debug
 _site
 
-# jekyll cache
-_site
+# yui-compressor
+*.jar
+
+# bundle cache
 vendor
 
-# rubygem
-*.gem
-# yard docs
-doc
-
-# npm dependencies
-node_modules
-package-lock.json
+.history
