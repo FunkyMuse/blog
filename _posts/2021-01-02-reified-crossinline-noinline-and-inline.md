@@ -114,6 +114,8 @@ inline fun stopUsingJava(crossinline body: () -> Unit) {
 }
 ```
 
+## Inlining explanations
+---
 Since body can't do non local returns and the function is an inlined one, body has to be marked with crossinline, you requested to copy-paste the code of the block into a place that expects a value by doing so it can't contain non-local control flow, what does this mean? 
 You can't use return.
 
@@ -162,6 +164,8 @@ it returns a [Type](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/
 
 and now we have an array of actual type arguments that hold the object representing the actualy type argument, we need the first object only.
 
+## Type
+---
 ```kotlin
 val type: Type?
     get() = (this::class.java.genericSuperclass as ParameterizedType).actualTypeArguments.firstOrNull()

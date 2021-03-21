@@ -1,8 +1,8 @@
 ---
 title: View binding for the lazy
 date: 2020-11-05 11:46:00 +0100
-categories: [Android, Kotlin]
-tags: [Android, Kotlin]
+categories: [Android]
+tags: [Android]
 ---
 
 <img src="/assets/img/2/1.png" class="center">
