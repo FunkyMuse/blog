@@ -63,7 +63,7 @@ _build() {
     if [[ ! -z $(git -C "$DEST" status -s) ]]; then
       git -C "$DEST" add .
       git -C "$DEST" commit -m "[Automation] Update site files." -q
-      echo -e "\nPlease push the changes of $DEST to remote master branch.\n"
+      echo -e "\nPlease push the changes of $DEST to remote main branch.\n"
     fi
   fi
 
