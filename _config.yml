@@ -23,7 +23,7 @@ description: >-                        # used by seo meta and the atom feed
   A minimal portfolio for FunkyMuse
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'blog'
+url: '/blog'
 
 author: FunkyMuse                  # change to your full name
 
