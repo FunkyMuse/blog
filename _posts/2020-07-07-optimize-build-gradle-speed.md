@@ -5,6 +5,8 @@ categories: [Gradle, Android]
 tags: [Android, Gradle, Optimizations]
 ---
 
+<img src="https://1.bp.blogspot.com/-i0iss3nbtgw/XwLfZFuCQkI/AAAAAAAAw9I/IIDLtJnM4DYtaUjLfv1b778Mdhkph1L6wCK4BGAsYHg/s550/e750tqxcihi11.jpg" class="center">
+
 We've all came to a decision to go and do something else while waiting for the build.gradle to finish, something like: people get married or divorced, learn to fly a plane, build a rocket ship out of LEGO or take one hour poo.
 
 You downloaded Android studio and you just created an empty project and you had it run for the first time right?

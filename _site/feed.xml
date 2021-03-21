@@ -4,7 +4,7 @@
   <id>/</id>
   <title>FunkyMuse</title>
   <subtitle>A minimal portfolio for FunkyMuse</subtitle>
-  <updated>2021-03-21T17:41:14+01:00</updated>
+  <updated>2021-03-21T17:49:08+01:00</updated>
   <author>
     <name>FunkyMuse</name>
     <uri>/</uri>
@@ -48,11 +48,13 @@
 
 
 
-      We’ve all came to a decision to go and do something else while waiting for the build.gradle to finish, something like: people get married or divorced, learn to fly a plane, build a rocket ship out of LEGO or take one hour poo.
+      
+
+We’ve all came to a decision to go and do something else while waiting for the build.gradle to finish, something like: people get married or divorced, learn to fly a plane, build a rocket ship out of LEGO or take one hour poo.
 
 You downloaded Android studio and you just created an empty project and you had it run for the first time right?
 
-Well this should look familiar to you if you profile yo...
+Well this should look familiar to you if you profile ...
     </summary>
   
 
