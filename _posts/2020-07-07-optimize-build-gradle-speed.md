@@ -1,7 +1,7 @@
 ---
 title: Optimize the build speed for your Android project
 date: 2020-07-07 20:55:00 +0100
-categories: [Gradle, Android]
+categories: [Android, Gradle]
 tags: [Android, Gradle, Optimizations]
 ---
 
