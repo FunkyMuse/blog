@@ -19,6 +19,8 @@ const include = [
   
     '/archives/',
   
+    '/apps/',
+  
     '/about/',
   
 

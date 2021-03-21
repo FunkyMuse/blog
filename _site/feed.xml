@@ -4,7 +4,7 @@
   <id>/</id>
   <title>FunkyMuse</title>
   <subtitle>A minimal portfolio for FunkyMuse</subtitle>
-  <updated>2021-03-21T17:06:33+01:00</updated>
+  <updated>2021-03-21T17:41:14+01:00</updated>
   <author>
     <name>FunkyMuse</name>
     <uri>/</uri>
@@ -17,6 +17,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Optimize the build speed for your Android project</title>
+    <link href="/posts/optimize-build-gradle-speed/" rel="alternate" type="text/html" title="Optimize the build speed for your Android project" />
+    <published>2020-07-07T21:55:00+02:00</published>
+  
+    <updated>2020-07-07T21:55:00+02:00</updated>
+  
+    <id>/posts/optimize-build-gradle-speed/</id>
+    <content src="/posts/optimize-build-gradle-speed/" />
+    <author>
+      <name>FunkyMuse</name>
+    </author>
+
+  
+    
+    <category term="Gradle" />
+    
+    <category term="Android" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      We’ve all came to a decision to go and do something else while waiting for the build.gradle to finish, something like: people get married or divorced, learn to fly a plane, build a rocket ship out of LEGO or take one hour poo.
+
+You downloaded Android studio and you just created an empty project and you had it run for the first time right?
+
+Well this should look familiar to you if you profile yo...
+    </summary>
+  
+
+  </entry>
 
 </feed>
 

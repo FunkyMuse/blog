@@ -1,4 +1,19 @@
 [
   
+  {
+    "title": "Optimize the build speed for your Android project",
+    "url": "/posts/optimize-build-gradle-speed/",
+    "categories": "Gradle, Android",
+    "tags": "Android, Gradle, Optimizations",
+    "date": "2020-07-07 21:55:00 +0200",
+    
+
+
+
+
+
+    "snippet": "We’ve all came to a decision to go and do something else while waiting for the build.gradle to finish, something like: people get married or divorced, learn to fly a plane, build a rocket ship out of LEGO or take one hour poo.You downloaded Android studio and you just created an empty project and..."
+  }
+  
 ]
 
