@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/categories/</loc>
+<lastmod>2021-03-21T17:06:33+01:00</lastmod>
+</url>
+<url>
+<loc>/tags/</loc>
+<lastmod>2021-03-21T17:06:33+01:00</lastmod>
+</url>
+<url>
+<loc>/archives/</loc>
+<lastmod>2021-03-21T17:06:33+01:00</lastmod>
+</url>
+<url>
+<loc>/about/</loc>
+<lastmod>2021-03-21T17:06:33+01:00</lastmod>
+</url>
+<url>
+<loc>/</loc>
+</url>
+</urlset>
