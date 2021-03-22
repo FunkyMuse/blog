@@ -134,3 +134,4 @@ As you can notice that Logger was constructed how it supposed to be, our **Messe
 
 <img src="/assets/img/dagger/3/2.jpg" class="center">
 
+[Part #4](/posts/dagger-part-4/)
