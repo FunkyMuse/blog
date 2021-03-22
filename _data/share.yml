@@ -19,8 +19,9 @@ platforms:
     type: Linkedin
     icon: "fab fa-linkedin"
     link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
+
+  -
+    type: Reddit
+    icon: "fab fa-reddit"
+    link: "http://www.reddit.com/submit?url=URL&title=TITLE"
   
-  # -
-  #   type: Weibo
-  #   icon: "fab fa-weibo"
-  #   link: "http://service.weibo.com/share/share.php?title=TITLE&url=URL"
