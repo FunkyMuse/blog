@@ -1,5 +1,5 @@
 ---
-title: Dagger2 is hard, but it can be easy &#35;1
+title: Dagger2 is hard, but it can be easy, part 1
 date: 2021-03-01 15:46:00 +0100
 categories: [Dagger]
 tags: [Dagger, Kotlin, Android]
