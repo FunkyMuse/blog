@@ -173,6 +173,20 @@ interface OurFirstComponent {
 }
 ```
 
+```kotlin
+class TestApplication : Application() {
+
+    @Inject
+    lateinit var logger: Logger
+
+
+    override fun onCreate() {
+        super.onCreate()
+        DaggerOurFirstComponent.create().createSingletons(this)
+    }
+}
+```
+
 and inside the activities
 
 ```kotlin
