@@ -11,7 +11,7 @@ In the [previous](/posts/dagger-part-4/) post we've explored scope operators.
 
 In this post we'll encounter subcomponents and their hierarchy, custom scopes and let's not waste any time.
 
-Let's start by including the shared androidx.preferences library
+Starting off by including the shared androidx.preferences library
 ```kotlin
 implementation 'androidx.preference:preference-ktx:1.1.1'
 ```
