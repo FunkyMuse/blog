@@ -356,3 +356,4 @@ Some might argue that you'll replace vanilla Dagger completely, well... not quit
 
 <img src="https://i.gifer.com/Z92U.gif" class = "center">
 
+[Part #6](/posts/dagger-part-6/)

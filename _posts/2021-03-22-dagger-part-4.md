@@ -253,3 +253,4 @@ Thanks for the wholeharted attention.
 
 <img src="/assets/img/dagger/4/great_success.gif" class="center">
 
+[Part #5](/posts/dagger-part-5/)
