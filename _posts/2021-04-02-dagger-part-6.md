@@ -598,7 +598,8 @@ Inside your `AndroidManifest.xml`
 
 ## What's next?
 ---
-Probably everyone's wondering, why's there no blog post about **Hilt** since it's easier, yes *Hilt* is easier because it does all of this for you behind the scenes so that you don't have to do it, there's one more blog post about the dreaded but powerful `Multi bindings`, I won’t cover WorkManager’s injection using this example but you can realize how much boilerplate we have to write and after the `Multi bindings` post we’re jumping to the Hilt train, which offers easier integration with `WorkManager`.
+Probably everyone's wondering, why's there no blog post about **Hilt** since it's easier, yes *Hilt* is easier because it does all of this for you behind the scenes so that you don't have to do it, there's one more blog post about the dreaded but powerful `Multi bindings`, I won’t cover WorkManager’s injection using this example but you saw how much boilerplate we have to write and after the `Multi bindings` post we’re jumping to the Hilt train, which offers easier integration with `WorkManager` and with practically everything, not just `Workmanager`.
 
 <img src="/assets/img/dagger/6/patterns.png" class="center">
 
+[Part #7](/posts/dagger-part-7/)
