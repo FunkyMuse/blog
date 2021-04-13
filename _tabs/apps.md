@@ -9,7 +9,7 @@ order: 4
 3. [Aurora, Library genesis(Libgen) app](/aurora)
 4. [Developer jobs, find remote jobs](/developer-jobs)
 5. [JSP-Skopje schedule, bus time-table](/jsp-skopje)
-6. [Subhub, subtitles downloader](/subhub)
+6. [Subhub, subtitles downloader](https://github.com/FunkyMuse/SubHub)
 7. [Onionly, dark web search engine](/onionly)
 8. [TorrX, torrent search engine](/torrx)
 9. [Sekttor, security audit](/sekktor)
