@@ -5,6 +5,9 @@ categories: [Hilt, Compose]
 tags: [Hilt, Kotlin, Compose, Android]
 ---
 
+<img src="/assets/img/nav_mm_hilt/header.png" class="center">
+
+
 If you've written an Android application you must have had some form of navigation inside your project, whether that's manually starting Activities or managing Fragment transactions on your own (hopefully you didn't have to do this) or using navigation component, this is an article for you.
 
 As you know Google released a terribly named UI toolking that's just basically a compiler plugin on top of Kotlin to build Android UI, for more information about this read Jake's [blogpost](https://jakewharton.com/a-jetpack-compose-by-any-other-name/).
