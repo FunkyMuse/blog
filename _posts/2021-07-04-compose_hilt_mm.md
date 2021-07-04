@@ -195,6 +195,7 @@ Your project will look like this or you might add another layer in between that 
 You might think, we're creating a lot of modules, yes we are, we're creating reusable parts that we can easily test and plug-in, plug-out or replace whenever we need to, some argue that good architecture is expensive, but have you tried bad architecture?
 
 Compose UI enables us to hoist everything up to the top function and we can have everything as it's own component, unreliant on anything else, uncoupled and does only it's own thing.
+
 For example a confirmation dialog
 
 <img src="/assets/img/nav_mm_hilt/10.png" class="center">
@@ -203,5 +204,12 @@ For example a confirmation dialog
 
 You can check out this approach in my pet [project](https://github.com/FunkyMuse/Aurora).
 
-*Also there's another UI approach I took, not as mentioned in the project (as this project only has a small part of the UI modularized), which had the design, colors, styles, themes separated, as well as a building component for buttons, titles, subtitles etc.. but it's not mentioned here as the UI part for compose will change in the future and they'll be better practices, at the moment that's how I saw it fit to modularize every single part of the UI as well, but this small pet project can't really shine in that way, unless it grows in the future.*
+*Also there's another UI approach I took, not as mentioned in the project (as this project only has a small part of the UI modularized), which had the design, colors, styles, themes separated, as well as a building component for buttons, titles, subtitles etc.. but it's not mentioned here as the UI parts for compose will change in the future and there will be better "best" practices, at the moment that's how I saw it fit to modularize every single part of the UI as well, but this small pet project can't really shine in that way, unless it grows in the future.*
+
+Thank you for reading and I hope you learnt something new.
+
+Don't forget to subscribe to the RSS feed in order to get updates for
+future posts.
+
+Stay safe!
 
