@@ -6,7 +6,7 @@ order: 4
 
 1. [Berg YTS/YIFI movies mobile, tablet and TV app](/berg)
 2. [Otaku, anime app](/otaku)
-3. [Aurora, Library genesis(Libgen) app]([/aurora](https://github.com/FunkyMuse/Aurora))
+3. [Aurora, Library genesis(Libgen) app](https://github.com/FunkyMuse/Aurora)
 4. [Developer jobs, find remote jobs](/developer-jobs)
 5. [JSP-Skopje schedule, bus time-table](/jsp-skopje)
 6. [Subhub, subtitles downloader](https://github.com/FunkyMuse/SubHub)
