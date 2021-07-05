@@ -20,6 +20,8 @@ And Google also released architecture components to ease our lives, or did they?
 
 There are several mistakes you can make when using architecture components, even if you don't make them, you should be aware.
 
+This article assumes you have knowledge what `ViewModel` is, `SOLID` principles and some general knowledge how things make sense (at least in this article).
+
 ## Leaking LiveData observers in Fragments
 ---
 
@@ -33,9 +35,9 @@ override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 ```
 Google's lint forces you to use `getViewLifecycleOwner()`, because if you're using the Fragment as a `LifecycleOwner` you're always adding observers and never clearing them because the `LifecycleOwner` didn't reach the `DESTROY`ed state.
 
-🚫 don't use Fragment as a `LifecycleOwner` when observing Live Data
+🚫 Don't use Fragment as a `LifecycleOwner` when observing Live Data.
 
-✅ Use the getter for `viewLifecycleOwner`, since your observer has a `DESTROY`ed state when it reaches `onDestroyView`
+✅ Use the getter for `viewLifecycleOwner`, since your observer has a `DESTROY`ed state when it reaches `onDestroyView`.
 
 ## Observing flows in launchWhenX
 ---
@@ -46,9 +48,9 @@ You decided to get rid of LiveData and you started using `viewLifeCycleOwner.lif
 
 TL:DR; flows can be dropped when config changes, every time you call this function `LifecycleController` and `PausingDispatcher` are created and also `launchWhenX` functions also use `Dispatchers.Main.immediate`
 
-🚫 don't use `launchWhenX`
+🚫 Don't use `launchWhenX`.
 
-✅ Use the new `repeatOnLifecycle` or just use `flow.asLiveData`
+✅ Use the new `repeatOnLifecycle` or just use `flow.asLiveData`.
 
 *Thanks to Manuel Vivo who provided a [great explanation](https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333)*.
 
@@ -152,7 +154,7 @@ class DetailedMovieFragment : Fragment(R.layout.fragment_detailed_movie){
 }
 ```
 
-🚫 don't call the function to fetch the data in  `onViewCreated` nor in `onCreateView` nor anywhere inside the `Fragment` unless it's an action that's triggered by the user input
+🚫 Don't call the function to fetch the data in  `onViewCreated` nor in `onCreateView` nor anywhere inside the `Fragment` unless it's an action that's triggered by the user input.
 
 ✅ Use the `init` function inside the `ViewModel`, that's called only once when the `ViewModel` is created.
 
@@ -175,9 +177,9 @@ var data : MutableLiveData<DetailedMovieModel> = MutableLiveData()
 var data : MutableStateFlow<DetailedMovieModel?> = MutableStateFlow(null)
 ```
 
-🚫 Don't use `var` as a way to create a data holder
+🚫 Don't use `var` as a way to create a data holder.
 
-✅ Use `val`
+✅ Use `val`.
 
 You're creating unnecessary getter for the data holder, if `MutableLiveData` was a variable you could've just assigned the value to it directly without using `.value` or `postValue()`.
 
@@ -243,7 +245,7 @@ class MovieFragment : Fragment(){
 
 🚫 Don't expose `Mutable` data holder to the `Fragment`, if you're using two-way binding with data-binding, then stop using data-binding and use view-binding, this is a harsh and direct statement but just don't use `data-binding`, if `data-binding` was a great solution there wouldn't be a code pollution and `view-binding` as a replacement, `data-binding` also breaks `SOLID` too.
 
-✅ Expose an immutable data holder
+✅ Expose an immutable data holder.
 
 ### Using underscore for naming the mutable state holder
 
@@ -271,7 +273,7 @@ private val movieData : MutableStateFlow<DetailedMovieModel?> = MutableStateFlow
 val movie = movieData.asStateFlow()
 ```
 
-🚫 Don't use `_name` for the love of everyone on your team
+🚫 Don't use `_name` for the love of everyone on your team.
 
 ✅ Use more descriptive name, something like `data` or get creative.
 
@@ -289,14 +291,13 @@ val movie get() = movieData.asStateFlow()
 ```
 
 Kotlin docs just point it out for you
-```text
-If you define a custom getter, it will be called every time you access the property (this way you can implement a computed property)
-```
+
+> If you define a custom getter, it will be called every time you access the property (this way you can implement a computed property)
 
 
-🚫 Don't use a getter for the immutable data holder
+🚫 Don't use a getter for the immutable data holder.
 
-✅ Initialize it immediately after the mutable data holder
+✅ Initialize it immediately after the mutable data holder.
 
 ```kotlin
 private val movieData : MutableLiveData<DetailedMovieModel> = MutableLiveData()
@@ -376,9 +377,9 @@ class MapViewModel @Inject constructor(
 }
 ```
 
-🚫 Don't just create references that'll be held in the `ViewModel`
+🚫 Don't just create references that'll be held in the `ViewModel`.
 
-✅ Every reference has to be cleared in `onCleared()`
+✅ Every reference has to be cleared in `onCleared()`.
 
 
 ### Observing inside a ViewModel
@@ -398,11 +399,11 @@ One day I opened the `proton-mail-android` app and glanced over [EditContactDeta
 
 ## Observing in the wrong places
 ---
-🚫 Do not observe inside `onResume` 
+🚫 Do not observe inside `onResume` .
 
-🚫 Do not observe inside `onCreate` in the `Fragment`
+🚫 Do not observe inside `onCreate` in the `Fragment`.
 
-🚫 Do not observe inside a `Service` unless you manage it's lifecycle, same goes for a `BroadcastReceiver`
+🚫 Do not observe inside a `Service` unless you manage it's lifecycle from `CREATED` > `DESTROYED`, same goes for a `BroadcastReceiver`.
 
 ## Resetting the current observer
 ---
@@ -473,7 +474,7 @@ class Event<out T>(private val content: T) {
 
 Which you need to use `getContentIfNotHandled()` first in order to see if the content is consumed, I just deleted that thing and went to use a `Channel`
 
-🚫 do not use `MutableLiveData` or flow to show a `Toast` a `SnackBar` or even worse a `Dialog` or something that'll just spam the user endlessly.
+🚫 Do not use `MutableLiveData` or flow to show a `Toast` a `SnackBar` or even worse a `Dialog` or something that'll just spam the user endlessly.
 
 ✅ Use a [Channel](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.channels/-channel/) or the hacky solution Google provided and shoot yourself in the foot with writing boilerplate code.
 
