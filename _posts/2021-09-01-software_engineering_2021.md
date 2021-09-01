@@ -117,7 +117,7 @@ Sometimes your company doesn't even need these things, remember when everyone tr
 
 Now it's the same thing with **agile**, but they just don't understand, until something replaces it as the next big thing, so that your bosses can advertise that: "we're using this methodology, we achieved excellency".
 
-Corporate leadership cant *"feel in charge"* unless they’re interacting with people face to face.
+Corporate leadership can't *"feel in charge"* unless they’re interacting with people face to face.
 
 The ego-gratifying whiners can't shake hands now, can they? Too bad that they won't be center of attention, now you can easily give them the vouchers they gave you for free psychological counseling, because they need it more than you do.
 
@@ -154,7 +154,7 @@ Designing *scalability* is really good, **BUT** if you know how much you'll need
 
 Doing MR/PR reviews is really hard because, **It’s harder to read code than to write it**.
 
-The dendency of destructuring a problem boils down to a complexity of one's codebase, even if one person wrote, i'm pretty sure that they can't remember what they did and what they were thinking at that time, comments are useful for that purpose and should be IMHU added only when you need to be reminded what you were thinking when you created that and then you'll know the purpose.
+The tendency of destructuring a problem boils down to a complexity of one's codebase, even if one person wrote, i'm pretty sure that they can't remember what they did and what they were thinking at that time, comments are useful for that purpose and should be IMHU added only when you need to be reminded what you were thinking when you created that and then you'll know the purpose.
 
 [What is the most sophisticated piece of software/code ever written?](https://www.reddit.com/r/programming/comments/8kd7r9/the_most_sophisticated_piece_of_softwarecode_ever/)
 
