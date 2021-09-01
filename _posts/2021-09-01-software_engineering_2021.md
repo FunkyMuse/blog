@@ -84,7 +84,7 @@ Sometimes you might ask yourself, [are we even really engineers](https://www.hil
 
 One day as a joke to my colleague I told her that I am a code gardener, didn't realize the impact and the truth of it until I sat and took a big dump in the WC.
 
-It all starts when you think, oh okay I have these 4-5 lines of code, move it into a function, *sheesh*: let's create a layer that'll help us reuse the code, *omfg*: whine about which new shiny library is better than the previos one, *unleash the rage*: programming language X vs Y, *cross platform solutions*: shoot yourself in the food and keep asking yourself about why you never wore a shoe but you were holding a gun in the first place.
+It all starts when you think, oh okay I have these 4-5 lines of code, move it into a function, *sheesh*: let's create a layer that'll help us reuse the code, *omfg*: whine about which new shiny library is better than the previos one, *unleash the rage*: programming language X vs Y, *cross platform solutions*: shoot yourself in the foot and keep asking yourself about why you never wore a shoe but you were holding a gun in the first place.
 
 It's all just drama and most of the times we tend to be the queens in it.
 
