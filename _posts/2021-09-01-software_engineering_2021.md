@@ -154,7 +154,7 @@ Designing *scalability* is really good, **BUT** if you know how much you'll need
 
 Doing MR/PR reviews is really hard because, **It’s harder to read code than to write it**.
 
-The tendency of destructuring a problem boils down to a complexity of one's codebase, even if one person wrote, i'm pretty sure that they can't remember what they did and what they were thinking at that time, comments are useful for that purpose and should be IMHU added only when you need to be reminded what you were thinking when you created that and then you'll know the purpose.
+The tendency of destructuring a problem boils down to a complexity of one's codebase, even if one person wrote it, i'm pretty sure that they can't remember what they did and what they were thinking at that time, comments are useful for that purpose and should be IMHU added only when you need to be reminded what you were thinking when you created that and then you'll know the purpose.
 
 [What is the most sophisticated piece of software/code ever written?](https://www.reddit.com/r/programming/comments/8kd7r9/the_most_sophisticated_piece_of_softwarecode_ever/)
 
